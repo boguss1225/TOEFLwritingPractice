@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 
 class HelpDialog{
 	public  HelpDialog(JFrame f){
-		 	Dialog HelpDia = new Dialog(f,"도움말",true);
+		 	Dialog HelpDia = new Dialog(f,"help",true);
 		 	
 		 	HelpDia.addWindowListener(new WindowAdapter(){
 				public void windowClosing(WindowEvent e){
@@ -27,12 +27,12 @@ class HelpDialog{
 		 	HelpDia.setLocation(xpos, ypos);
 		 	HelpDia.setLayout(new FlowLayout());
 		 	
-		 	JLabel Hl1 = new JLabel("<<도움말>>");
-			JLabel Hl2 = new JLabel("이 프로그램은 18년6월1일 작성되었습니다");
-			JLabel Hl3 = new JLabel("윤희문");
-			JLabel Hl4 = new JLabel("화면이 안나올시 프레임을 한번 조정해주세요");
+		 	JLabel Hl1 = new JLabel("<<help>>");
+			JLabel Hl2 = new JLabel("This program was written on June 1, 18");
+			JLabel Hl3 = new JLabel("Heemoon Yoon");
+			JLabel Hl4 = new JLabel("If the screen does not appear, please adjust the frame once");
 			
-			JButton Hb1 = new JButton("확인");
+			JButton Hb1 = new JButton("Confirm");
 			
 			class Hb1EventHandler implements ActionListener{
 				@Override
@@ -57,7 +57,7 @@ class HelpDialog{
 
 class AuthorDialog{
 	public AuthorDialog(JFrame f){
-		 	Dialog AuthorDia = new Dialog(f,"제작자 정보",true);
+		 	Dialog AuthorDia = new Dialog(f,"Maker information",true);
 		 	
 		 	AuthorDia.addWindowListener(new WindowAdapter(){
 				public void windowClosing(WindowEvent e){
@@ -72,11 +72,11 @@ class AuthorDialog{
 		 	AuthorDia.setLocation(xpos,ypos);
 		 	AuthorDia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("<<저자정보>>");
-			JLabel l2 = new JLabel("Author : 숭실대 20110452 윤희문");
+		 	JLabel l1 = new JLabel("<<Author Information>>");
+			JLabel l2 = new JLabel("Author : Soongsil University 20110452 Heemoon Yoon");
 			JLabel l3 = new JLabel("jcjc7890@gmail.com");
-			JLabel l4 = new JLabel("2018-6-01 제작");
-			JButton b1 = new JButton("확인");
+			JLabel l4 = new JLabel("2018-6-01 making");
+			JButton b1 = new JButton("Confirm");
 			
 			
 			class b1EventHandler implements ActionListener{
