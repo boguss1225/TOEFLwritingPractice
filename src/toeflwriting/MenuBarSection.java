@@ -14,16 +14,16 @@ class MenuBarSection{
 	public void MakeMenuBar(JFrame f){
 		//////////////////////////////////Menu_bar///////////////////////////////////////
 		JMenuBar menubar = new JMenuBar();
-		JMenu file = new JMenu("ÆÄÀÏ");
-		JMenu edit = new JMenu("ÆíÁý");
-		JMenu help = new JMenu("µµ¿ò¸»");
+		JMenu file = new JMenu("file");
+		JMenu edit = new JMenu("edit");
+		JMenu help = new JMenu("Help");
 		//<<<<<<<<<<<<File Menu>>>>>>>>>>>>
-		JMenuItem open = new JMenuItem("¿­±â");
-		JMenuItem save = new JMenuItem("ÀúÀå");
-		JMenuItem exit = new JMenuItem("ÇÁ·Î±×·¥ Á¾·á");
+		JMenuItem open = new JMenuItem("Heat");
+		JMenuItem save = new JMenuItem("Save");
+		JMenuItem exit = new JMenuItem("Program termination");
 		
-		JMenuItem helpwords = new JMenuItem("µµ¿ò±Û");
-		JMenuItem author = new JMenuItem("Á¦ÀÛÀÚÁ¤º¸");
+		JMenuItem helpwords = new JMenuItem("Help");
+		JMenuItem author = new JMenuItem("Maker information");
 		file.add(open);
 		file.add(save);
 		file.addSeparator();
@@ -60,21 +60,21 @@ class MenuBarSection{
 				}
 			}}	
 		save.addActionListener(new saveEventHandler());
-		//Á¾·á ¸Þ´º¾ÆÀÌÅÛ
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		class exitEventHandler implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent ae){
 				System.exit(0);
 			}}	
 		exit.addActionListener(new exitEventHandler());		
-		//µµ¿ò¸» ¸Þ´º¾ÆÀÌÅÛ
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		class helpEventHandler implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent ae){
 				new HelpDialog(f);
 			}}
 		helpwords.addActionListener(new helpEventHandler());
-		//ÀúÀÛÀÚ ¸Þ´º¾ÆÀÌÅÛ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		class authorEventHandler implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent ae){
